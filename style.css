@@ -1,0 +1,89 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-height: 100vh;
+  font-family: "Open Sans Pro", sans-serif;
+  font-size: 24px;
+}
+
+body {
+  background-color: lightsalmon;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+}
+
+h1 {
+  font-family: "Lobster", "Open Sans", sans-serif;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+.input-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input {
+  all: unset;
+  height: 1.2rem;
+  border: 2px solid black;
+  background-color: white;
+  padding: 0 0.2rem;
+}
+
+#pwd-button {
+  all: unset;
+  background-color: black;
+  color: white;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 0.2rem 1.5rem;
+  border: 2px solid black;
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.pwd-requirements {
+  text-align: center;
+  padding: 0rem;
+}
+
+.text {
+  padding: 0;
+  margin: 0.5rem;
+}
+
+.valid:after {
+  content: " ✅";
+}
+
+.invalid:after {
+  content: " ❌";

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Check App</title>
+  
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Password Check</h1>
+    </header>
+    <main>
+        <div class="input-btn">
+            <input id="pwd1" class="input" type="password">
+            <input id="pwd2" class="input" type="password">
+            <button id="pwd-button">Show Password</button>
+        </div>
+        <div class="pwd-requirements">
+            <p id="passwords-equal" class="valid invalid text">Passwords are equal</p>
+            <p id="has-lower-case-char" class="valid invalid text">Lower Case Letter</p>
+            <p id="has-upper-case-char" class="valid invalid text">Upper Case Letter</p>
+            <p id="has-number" class="valid invalid text">Contains Numbers</p>
+            <p id="ten-characters" class="valid invalid text">At Least 10 characters long</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
